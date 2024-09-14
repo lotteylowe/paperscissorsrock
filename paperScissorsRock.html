@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper, scissors, rock?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="paperScissorsRock.css">
+</head>
+<body>
+    <section class="heading">
+        <h1>Paper, Scissors, Rock?</h1>
+        <h2 id="round-display">Round one</h2>
+    </section>
+    <section class="game-board-wrapper">
+        <div class="board-wrapper">
+            <div class="selected-weapon-wrapper">
+                <img class="selected-weapon" src="images/rock.png" alt="player weapon" width="600" height="400">
+                <p class="weapon-placeholder">?</p>
+            </div>
+            <div class="score-wrapper">
+            <p>Player</p>
+            <p><span id="player-score"></span>/ 3</p>
+            </div>
+        </div>
+        <p class="vs-tag">vs</p>
+        <div class="board-wrapper">
+            <div class="selected-weapon-wrapper">
+                <img class="selected-weapon" src="images/rock.png" alt="player weapon" width="600" height="400">
+                <p class="weapon-placeholder">?</p>
+            </div>
+            <div class="score-wrapper">
+            <p>Computer</p>
+            <p><span id="computer-score"></span>/ 3</p>
+            </div>
+        </div>
+    </section>
+    <section class="weapon-selection-wrapper">
+        <h2>choose your weapon wisely...</h2>
+        <div class="weapon-selection">
+        <div class="weapon-wrapper">
+            <div class="weapon-img-wrapper">
+            <img class="weapon-img" id="paper" src="images/paper.png" alt="player weapon paper">
+            </div>
+            <div class="weapon-name-wrapper">
+                <p>Paper</p>
+                <p>Tactical</p>
+            </div>
+            <div class="weapon-description">
+                <p>Thin but crafty. Folds rocks, sliced by blades.</p>
+            </div>
+            <div class="weapon-stats">
+                <p>Strength: ★★☆☆☆</p>
+                <p>Agility: ★★★★☆</p>
+                <p>Durability: ★☆☆☆☆</p>
+            </div>
+        </div>
+
+        <div class="weapon-wrapper">
+            <div class="weapon-img-wrapper">
+            <img class="weapon-img" id="scissors" src="images/scissors.png" alt="player weapon scissors">
+            </div>
+            <div class="weapon-name-wrapper">
+                <p>Scissors</p>
+                <p>Swift</p>
+            </div>
+            <div class="weapon-description">
+                <p>Dual blades. Shreds paper, dulled by stone.</p>
+            </div>
+            <div class="weapon-stats">
+                <p>Strength: ★★★☆☆</p>
+                <p>Agility: ★★★☆☆</p>
+                <p>Durability: ★★☆☆☆</p>
+            </div>
+            
+        </div>  
+        
+        <div class="weapon-wrapper">
+            <div class="weapon-img-wrapper">
+            <img class="weapon-img" id="rock" src="images/rock.png" alt="player weapon rock">
+            </div>
+            <div class="weapon-name-wrapper">
+                <p>Rock</p>
+                <p>Relentless</p>
+            </div>
+            <div class="weapon-description">
+                <p>Old school brute. Shatters scissors, outsmarted by paper.</p>
+            </div>
+            <div class="weapon-stats">
+                <p>Strength: ★★★★☆</p>
+                <p>Agility: ★☆☆☆☆</p>
+                <p>Durability: ★★★★☆</p>
+            </div>
+        </div>
+        </div>  
+    </section>
+</body>
+</html>
