@@ -1,6 +1,7 @@
+
 let playerScore = 0;
 let computerScore = 0;
-
+let gameRound = 0;
 
 function getComputerChoice() 
 {
@@ -99,17 +100,33 @@ function playRound(playerChoice, computerChoice)
     }
 }
 
-console.log(playerScore);
-console.log(computerScore);
 
-const playerSelection = getPlayerChoice();
-const computerSelection = getComputerChoice();
-console.log(computerSelection);
-console.log(playerSelection);
+function playGame()
+{
+    while (playerScore < 5  && computerScore < 5)
+    {
+        // playRound();
+        const playerSelection = getPlayerChoice();
+        const computerSelection = getComputerChoice();
+        gameRound++;
+        console.log(playRound(playerSelection, computerSelection));
+
+        console.log(computerSelection);
+        console.log(playerSelection);
+        console.log("Round " + gameRound);
+    }
+
+
+    console.log("player " + playerScore);
+    console.log("computer " + computerScore);
+    console.log();
+}
+
+ playGame();
 
 
 
-console.log(playRound(playerSelection, computerSelection));
+
 
 
 
